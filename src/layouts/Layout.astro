@@ -17,6 +17,7 @@ image = "/images/logo.jpg" } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
+		<script>document.documentElement.classList.add('js')</script>
 		<meta charset="UTF-8" />
 		<meta name="description" content="{description}" />
 		<meta name="viewport" content="width=device-width" />
@@ -24,6 +25,8 @@ image = "/images/logo.jpg" } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<meta property = "og:image" content={image}/>
 		<title>{title}</title>
+
+		<script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 	</head>
 	<body class = "min-h-screen">
 

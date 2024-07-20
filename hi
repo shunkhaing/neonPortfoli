@@ -1,0 +1,23 @@
+[33mcommit b182b505177cc0e9dfa060afa3a5e78479199fcf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Shun Khaing <shunlaettk@gmail.com>
+Date:   Fri Jul 19 23:01:03 2024 -0700
+
+    added h-vh to section Projects.astro
+
+[33mcommit aa04a702b51851fbdf11de460916fb1fd8a6d978[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Shun Khaing <shunlaettk@gmail.com>
+Date:   Fri Jul 19 18:23:49 2024 -0700
+
+    added SVG skills in skillsSection, changed bg, created Projects sect
+
+[33mcommit fb1a97a6b513d3cba969495c2e1e58204fb4dc47[m
+Author: Shun Khaing <shunlaettk@gmail.com>
+Date:   Fri Jul 19 08:24:10 2024 -0700
+
+    add svg for SkillsSection, change bg, Header neon border-> p-8
+
+[33mcommit e7e4123d88e68fab9f9082ca79975920cb60d842[m
+Author: Shun Khaing <shunlaettk@gmail.com>
+Date:   Fri Jul 19 07:07:33 2024 -0700
+
+    first commit

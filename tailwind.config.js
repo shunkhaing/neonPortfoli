@@ -2,8 +2,11 @@ import { transform } from 'typescript';
 
 /** @type {import('tailwindcss').Config} */
 export default {
-    mode: 'jit',
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	content: {
+        files: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+        relative: true,
+        transform: (content) => content.replace(/taos:/g, ''),
+    },
 	theme: {
 		extend: {
 			
@@ -16,6 +19,12 @@ export default {
                 'fade-out-down': 'fade-out-down 0.5s ease-out-in',
 				
             },
+            safelist: [
+                '!duration-[0ms]',
+                '!delay-[0ms]',
+                'html.js :where([class*="taos:"]:not(.taos-init))'
+            ],
+
             keyframes: {
                 'text-slide': {
                     '0%, 16%': {
@@ -59,7 +68,9 @@ export default {
         
 		},
 	},
-	plugins: [],
+	plugins: [
+        require('taos/plugin')
+    ],
 	
 }
 

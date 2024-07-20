@@ -6,8 +6,69 @@ import gsap from "gsap";
     <div class="h-vh items-center p-5 animated-background bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] 
     bg-[size:20px_20px]">
 
-    <div class="delay-[300ms] duration-[600ms] taos:translate-y-[-200px] taos:opacity-0" data-taos-offset="500"><div>
+        <section class="flex ">
+            <div class=" bg-black text-white 
+            delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,200px,0)] taos:opacity-0" data-taos-offset="300" id="card">
+                HELLO
+            </div>
+
+        </section>
+
+        <section class="lo h-vh">
+            <h1 class="text-white">
+                hello
+            </h1>
+        </section>
+
+        <section class="lo h-vh">
+            <h1 class="text-white">
+                hello
+            </h1>
+        </section>
+
+        <section class="lo h-vh">
+            <h1 class="text-white">
+                hello
+            </h1>
+        </section>
 
     </div>
 
 </div>
+
+
+<style>
+
+/* h1 {
+    font-size: 6rem;
+  margin: 0;
+  padding: 50px 0 0 50px;
+} */
+
+section {
+  width: 100%;
+  height: 33vh;
+  position: relative;
+}
+
+#card {
+    height: 99px;
+    width: 20%;
+    border: 4px;
+}
+
+section:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+section:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+</style>
+
+<script>
+
+ 
+
+</script>

@@ -1,5 +1,8 @@
+import { transform } from 'typescript';
+
 /** @type {import('tailwindcss').Config} */
 export default {
+    mode: 'jit',
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
@@ -10,6 +13,7 @@ export default {
             animation: {
                 'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
                 'infinite-scroll': 'infinite-scroll 25s linear infinite',
+                'fade-out-down': 'fade-out-down 0.5s ease-out-in',
 				
             },
             keyframes: {
@@ -37,7 +41,19 @@ export default {
 				'infinite-scroll': {
                     from: { transform: 'translateX(0)' },
                     to: { transform: 'translateX(-100%)' },
-                    }
+                    },
+
+                'fade-out-down': {
+                    from: {
+                        opacity: '1',
+                        transform: 'translateY(0)',
+                    },
+                    to: {
+                        opacity: '0',
+                        transform: 'translateY(90%)',
+                    },
+                }
+
 			
             },
         

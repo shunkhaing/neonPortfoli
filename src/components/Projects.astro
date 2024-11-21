@@ -1,133 +1,68 @@
 ---
-import gsap from "gsap";
+import { Fragment } from 'astro/jsx-runtime';
 ---
+<div class="animated-background bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] text-white">
+  <!-- About Me Section -->
+  <section id="about" class="container mx-auto px-6 text-center ">
+    <h2 class="pb-5 text-white text-4xl font-bold drop-shadow-[0_0_10px_#08f]">About Me</h2>
+    <p class="max-w-2xl mx-auto text-lg text-white drop-shadow-[0_0_5px_#08f]">I'm Shun, a developer passionate about web technologies, game development, and working with data. I thrive in challenging environments and constantly seek opportunities to expand my skill set and make an impact.</p>
+  </section>
 
-<div id="scroll-container" class = "animate-fade">
-    <div class="h-vh items-center p-5 animated-background bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] 
-    bg-[size:20px_20px]">
+<!-- 
 
-    <section class="py-24 center">
-        <div >
-            <div class="row">
-                <div class="col relative flex flex-row justify-center md:justify-center">
-                    <div id="canvas" class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:translate-y-[-200px] taos:opacity-0 taos-init" data-taos-offset="400"
-                     data-taos-class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary text-white rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:translate-y-[-200px] taos:opacity-0 taos-init">
-                        <h3 class="font-semibold capitalize">fade left</h3>
-                        <!-- <pre class="max-w-full md:w-[500px] rounded"> -->
-                            
-                        <!-- </pre> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <section class="py-24 center">
-        <div >
-            <div class="row">
-                <div class="col relative flex flex-row justify-center md:justify-end">
-                    <div id="canvas" class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary rounded-md delay-[200ms] duration-[400ms] [animation-iteration-count:infinite] taos:[transform:translate3d(200px,200px,0)] taos:opacity-0 taos-init" data-taos-offset="400" 
-                    data-taos-class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary text-white rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:[transform:translate3d(200px,200px,0)] taos:opacity-0 taos-init">
-                        <h3 class="font-semibold capitalize">fade right up</h3>
-
-                            <iframe id="calculator" src="https://blacksheepshaun.github.io/CalculatorJS/" class="max-w-full md:w-[500px] rounded" ></iframe>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <section class="py-24 center">
-        <div >
-            <div class="row">
-                <div class="col relative flex flex-row justify-center md:justify-start">
-                    <div id="canvas" class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary text-white rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:[transform:translate3d(-200px,200px,0)] taos:opacity-0 taos-init"
-                    data-taos-offset="400" data-taos-class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary text-white rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:[transform:translate3d(-200px,200px,0)] taos:opacity-0 taos-init">
-                        <h3 class="font-semibold capitalize">fade left up</h3>
-                        <pre class="max-w-full md:w-[500px] rounded">
-                            <iframe id="web" src="https://blacksheepshaun.github.io/Web-Development-Journey/" class="md:w-[500px] rounded" ></iframe>
-                        </pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <section class="py-24 center">
-        <div>
-            <div class="row">
-                <div class="col relative flex flex-row justify-center md:justify-centre">
-                    <div id="canvas" class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary text-white rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:translate-y-[200px] taos:opacity-0 taos-init" 
-                    data-taos-offset="400" data-taos-class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary text-white rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:translate-y-[200px] taos:opacity-0 taos-init">
-                        <h3 class="font-semibold capitalize">Fade up</h3>
-                        <pre class="max-w-full md:w-[500px] rounded"><code class="language-html !whitespace-normal">&lt;div class="delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="400"&gt;&lt;div&gt;</code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="py-24 center">
-        <div>
-            <div class="row">
-                <!-- <div class="col relative flex flex-row justify-center md:justify-start">
-                    <div id="canvas" class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary text-white rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:translate-y-[-200px] taos:opacity-0 taos-init" data-taos-offset="400" data-taos-class="flex flex-col items-center justify-center py-3 px-3 max-w-full md:w-[550px] bg-primary text-white rounded-md delay-[300ms] duration-[600ms] [animation-iteration-count:infinite] taos:translate-x-[-200px] taos:opacity-0 taos-init">
-                        <h3 class="font-semibold capitalize">fade right</h3>
-                        <pre class="max-w-full md:w-[500px] rounded"><code class="language-html !whitespace-normal">&lt;div class="delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="400"&gt;&lt;div&gt;</code></pre>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    
+  <section id="projects" class="container mx-auto my-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold mb-2">Project 1</h3>
+        <p class="text-lg mb-4">A brief description of the project.</p>
+        <a href="#" class="text-blue-400 hover:text-blue-500 underline">View Project</a>
+      </div>
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold mb-2">Project 2</h3>
+        <p class="text-lg mb-4">A brief description of the project.</p>
+        <a href="#" class="text-blue-400 hover:text-blue-500 underline">View Project</a>
+      </div>
 
     </div>
+  </section> -->
+
+  <!-- Education and Certifications Section -->
+  <section id="education" class="container mx-auto  px-6 text-center text-white text-4xl font-bold drop-shadow-[0_0_10px_#08f]">
+    <h2 class="text-3xl font-bold mb-4">Education & Certifications</h2>
+    <ul class="text-lg list-none flex flex-col">
+      <li>
+        Second-year Computer Science student at City College of San Francisco (CCSF).
+      </li>
+      <li class="pt-6">
+        <strong>"Build a Map Dashboard to Visualize Geographical Data,"</strong>
+        <p>
+        led by Shubham Sankhe, part of The Build Fellowship (Completed on September 16, 2024)
+        </p>
+
+      </li>
+      <!-- Add more entries as needed -->
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+   
+  <!-- <section id="contact" class="container mx-auto my-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-white drop-shadow-[0_0_10px_#08f]">Get in Touch</h2>
+    <form class="max-w-md mx-auto mt-8">
+      <div class="mb-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border rounded-lg bg-[#1e293b] border-gray-600 text-white" />
+      </div>
+      <div class="mb-4">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg bg-[#1e293b] border-gray-600 text-white" />
+      </div>
+      <div class="mb-4">
+        <textarea placeholder="Message" rows="5" class="w-full p-3 border rounded-lg bg-[#1e293b] border-gray-600 text-white"></textarea>
+      </div>
+      <button type="submit" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Send Message</button>
+    </form>
+  </section> -->
+
+  <!-- Footer -->
 
 </div>
-
-
-<style>
-
-#canvas {
-    background: white;
-}
-
-#web{
-    height: 50vh;
-    width: 50vw;
-}
-
-#calculator {
-    height: 42.5vh;
-    width: 76%;
-    border-radius: 16px;
-}
-
-/* .row {
-    border: 2px;
-    border-style: double;
-    
-} */
-h3, pre {
-    color: black;
-}
-
-/* section:nth-of-type(odd) {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-section:nth-of-type(even) {
-  background-color: rgba(255, 255, 255, 0.9);
-} */
-
-</style>
-
-<script>
-
- 
-
-</script>

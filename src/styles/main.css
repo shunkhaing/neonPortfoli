@@ -1,0 +1,20 @@
+
+/* text-sky-200 border-2 rounded-lg border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] */
+.custom-theme-with-border {
+    color: #bfdbfe; /* Equivalent to Tailwind's text-sky-200 */
+    border-width: 2px; /* Equivalent to Tailwind's border-2 */
+    border-radius: 0.5rem; /* Equivalent to Tailwind's rounded-lg (8px) */
+    border-color: #bfdbfe; /* Equivalent to Tailwind's border-sky-200 */
+    box-shadow: 0 0 2px #ffffff, inset 0 0 2px #ffffff, 0 0 5px #08f, 0 0 15px #08f, 0 0 30px #08f; /* Custom shadow */
+  }
+  
+  .custom-theme {
+    color: #bfdbfe; /* Equivalent to Tailwind's text-sky-200 */
+    box-shadow: 0 0 2px #ffffff, inset 0 0 2px #ffffff, 0 0 5px #08f, 0 0 15px #08f, 0 0 30px #08f; /* Custom shadow */
+  }
+
+  .about{
+    color: white;
+  }
+
+  

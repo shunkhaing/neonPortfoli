@@ -3,6 +3,9 @@ import Header from "../components/Header.astro"
 import Navbar from "../components/Navbar.astro"
 import SkillsSection from "../components/SkillsSection.astro";
 import Projects from "../components/Projects.astro";
+import ContactUs from '../components/contactForm.jsx';
+import Footer from "../components/Footer.astro"
+
 
 interface Props {
 	title: string;
@@ -28,13 +31,14 @@ image = "/images/logo.jpg" } = Astro.props;
 
 		<script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 	</head>
-	<body class = "min-h-screen">
+	<body class = "min-h-screen overflow-x-hidden">
 
 		<Navbar />
 		<Header />
 		<SkillsSection />
 		<Projects />
-		<!-- <slot /> -->
+		<ContactUs />
+		<Footer />
 	</body>
 </html>
 

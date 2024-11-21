@@ -12,6 +12,7 @@ export default {
 			
 			fontFamily: {
                 inter: ['Inter', 'sans-serif'],
+                vt323: ['VT323', 'monospace'],
             },
             animation: {
                 'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
